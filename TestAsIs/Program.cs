@@ -42,7 +42,7 @@ namespace TestAsIs
             };
 
             [Benchmark]
-            public int CastUsingAs()
+            public int IsOperator()
             {
                 var result = 0;
                 for (int i = 0; i < objectsForCast.Count; i++)
@@ -66,7 +66,7 @@ namespace TestAsIs
             }
 
             [Benchmark]
-            public int CastUsingIs()
+            public int AsOperator()
             {
                 var result = 0;
                 for (int i = 0; i < objectsForCast.Count; i++)
